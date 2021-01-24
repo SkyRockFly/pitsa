@@ -469,7 +469,7 @@ letter-spacing: 0.93px;
 
 }
 
-@media (max-width: 410px){
+@media (max-width: 420px){
   .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(35px,1fr));}
   header {font-size: 1.2rem;}
   .photo {grid-column: 1 /span 11; max-height: 50%; max-width: 45%;}
