@@ -402,7 +402,7 @@ letter-spacing: 0.93px;
   .work_main, .work_main_right {grid-column: 7 / span 7;}
   .train_desc, .work, .main_skills_desc, .profile_description {font-size: 1.2rem;}
   .train, .work_title, .profile {font-size: 1.8rem;}
-  .work_line {width: 0;}
+  .work_line {border: 0px;}
   .work_icon {grid-column: 4;}
   .work_title {grid-column: 5;}
   .work_date {grid-column: 1 / span 3;}
@@ -433,7 +433,7 @@ letter-spacing: 0.93px;
   .border_linkedIn {grid-column: 4;}
   .border_twitter {grid-column: 5;}
   .social_name {grid-column: 4;}
-  .profile_border {width: 0;}
+  .profile_border {border: 0px;}
   .profile_icon {grid-column: 4;}
   .profile_title {grid-column: 5;}
 }
@@ -469,7 +469,7 @@ letter-spacing: 0.93px;
 
 }
 
-@media (max-width: 420px){
+@media (max-width: 480px){
   .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(35px,1fr));}
   header {font-size: 1.2rem;}
   .photo {grid-column: 1 /span 11; max-height: 50%; max-width: 45%;}
@@ -498,7 +498,7 @@ letter-spacing: 0.93px;
   .work_date {grid-column: 2 / span 5;}
   .work_circle {grid-column: 1; grid-row: 4;}
   .work_desc {grid-column: 3 / span 6; grid-row: 4;}
-  .work_desc2 {grid-column: 1/ span 6; grid-row: 5;}
+  .work_desc2 {grid-column: 2/ span 6; grid-row: 5;}
   .train_desc {grid-column: 2/ span 4;}
   .work_dots, .work_dots_right {grid-column: 1;}
   .work_main {grid-column: 3 / span 5;}
@@ -507,11 +507,27 @@ letter-spacing: 0.93px;
 
 }
 
-@media (max-width: 240px){
+@media (max-width: 350px){
+  .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(25px,1fr));}
+  .twitter_icon {grid-column: 2; grid-row: 8;}
+  .linkedIn_icon {grid-column: 5; grid-row: 8;}
+  .github_icon {grid-column: 8; grid-row: 8;}
+  .border_twitter{grid-column: 2; grid-row: 9; position: relative; left: 30%}
+  .border_linkedIn{grid-column: 5; grid-row: 9; position: relative; left: 30%}
+  .border_github{grid-column: 8; grid-row: 9; position: relative; left: 30%}
+  .social_name{grid-column: 5 / span 3; grid-row: 10; justify-self: center;}
+  .contacts_phone{grid-column: 2; grid-row: 11;}
+  .contacts_phone_number{grid-column: 4 / span 4; grid-row: 11; position: relative; left: 3%}
+  .contacts_email_name{grid-column: 8 / span 3; grid-row: 12;}
+  .contacts_email{grid-column: 2; grid-row: 12;}
+}
+
+@media (max-width: 295px){
   .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(20px,1fr));}
   header {font-size: 0.7rem;}
   .photo {grid-column: 1 /span 10; max-height: 40%; max-width: 55%;}
-  .ux_designer, .header_name {grid-column: 7 / span 2; justify-self: start;}
+  .header_name {grid-column: 7 / span 2; justify-self: start;}
+  .ux_designer {grid-row: 7; grid-column: 3/ span 10;}
   .twitter_icon {grid-column: 2; grid-row: 8;}
   .linkedIn_icon {grid-column: 5; grid-row: 8;}
   .github_icon {grid-column: 8; grid-row: 8;}
