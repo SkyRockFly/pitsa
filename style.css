@@ -520,6 +520,9 @@ letter-spacing: 0.93px;
   .contacts_phone_number{grid-column: 4 / span 4; grid-row: 11; position: relative; left: 3%}
   .contacts_email_name{grid-column: 8 / span 3; grid-row: 12;}
   .contacts_email{grid-column: 2; grid-row: 12;}
+  .main_skills_desc {grid-column: 2/ span 9; font-size: 1rem; justify-self: center;}
+  .work_main {grid-column: 3 / span 9;}
+  .train_desc {grid-column: 2 / span 9; font-size: 0.9rem; justify-self: center;}
 }
 
 @media (max-width: 295px){
