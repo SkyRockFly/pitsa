@@ -1,8 +1,15 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper{
   grid-template-columns: repeat(auto-fill,minmax(105px,1fr));
   display: grid;
   row-gap: 20px;
   justify-items: center;
+  width: 99%;
   
 }
 
@@ -132,10 +139,10 @@ letter-spacing: 0.93px;
 .profile_border{
   position: relative;
   top: 35%;
-  grid-column: 3 / span 15;
+  grid-column: 6 / span 10;
   grid-row: 4;
   max-height: 0.5px;
-  width: 70rem;
+  width: 100%;
 
   border: 1.5px solid #4B78C4;
 }
@@ -249,12 +256,13 @@ letter-spacing: 0.93px;
 }
 
 .work_line{
+  width: 100%;
   position: relative;
   top: 40%;
-  grid-column: 10 / span 2;
+  grid-column: 7 / span 6;
   grid-row: 2;
   max-height: 0.05px;
-  width: 60rem;
+
 
   border: 1.5px solid #4B78C4;
 }
@@ -402,7 +410,7 @@ letter-spacing: 0.93px;
   .work_main, .work_main_right {grid-column: 7 / span 7;}
   .train_desc, .work, .main_skills_desc, .profile_description {font-size: 1.2rem;}
   .train, .work_title, .profile {font-size: 1.8rem;}
-  .work_line {border: 0px;}
+  .work_line {width: 0;}
   .work_icon {grid-column: 4;}
   .work_title {grid-column: 5;}
   .work_date {grid-column: 1 / span 3;}
@@ -420,8 +428,6 @@ letter-spacing: 0.93px;
   .skills2{ grid-column: 3 / span 5; grid-row: 11;}
 }
 
-
-
 @media (max-width:961px){
   .photo {max-height: 80%; max-width: 88%; grid-row: 2 / span 9;}
   .contacts_phone{grid-column: 3; grid-row: 15;}
@@ -435,18 +441,9 @@ letter-spacing: 0.93px;
   .border_linkedIn {grid-column: 4;}
   .border_twitter {grid-column: 5;}
   .social_name {grid-column: 4;}
-  .profile_border {border: 0px;}
+  .profile_border {width: 0;}
   .profile_icon {grid-column: 4;}
   .profile_title {grid-column: 5;}
-  .skills3, .skills2 {grid-column: 2/span 10;}
-  .work_icon {grid-column: 3;}
-  .work_title {grid-column: 4;}
-  .work_desc2 {grid-column: 3/ span 3;}
-  .work_dots {grid-column: 2; left: 0; grid-row: 8;}
-  .work_main {grid-column: 2 / span 4; grid-row: 8;}
-  .work_dots_right {grid-column: 2; grid-row: 11; left: 0;}
-  .work_main_right {grid-column: 3 / span 4; grid-row: 11;}
-  
 }
 
 
@@ -475,13 +472,12 @@ letter-spacing: 0.93px;
   .main_skills_desc {grid-column: 2/ span 5;}
   .work_icon {grid-column: 3;}
   .work_title {grid-column: 4;}
-  .work_main {grid-column: 3 / span 4; grid-row: 8;}
-  .work_desc2 {grid-column: 3/ span 4;}
+  .work_desc2 {grid-column: 4/ span 3;}
   .train_desc {grid-column: 2/ span 4;}
 
 }
 
-@media (max-width: 480px){
+@media (max-width: 420px){
   .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(35px,1fr));}
   header {font-size: 1.2rem;}
   .photo {grid-column: 1 /span 11; max-height: 50%; max-width: 45%;}
@@ -507,10 +503,10 @@ letter-spacing: 0.93px;
   .work {font-size: 0.9rem;}
   .work_icon {grid-column: 1;}
   .work_title {grid-column: 3;}
-  .work_date {grid-column: 2 / span 7;}
+  .work_date {grid-column: 2 / span 5;}
   .work_circle {grid-column: 1; grid-row: 4;}
   .work_desc {grid-column: 3 / span 6; grid-row: 4;}
-  .work_desc2 {grid-column: 2/ span 6; grid-row: 5;}
+  .work_desc2 {grid-column: 1/ span 6; grid-row: 5;}
   .train_desc {grid-column: 2/ span 4;}
   .work_dots, .work_dots_right {grid-column: 1;}
   .work_main {grid-column: 3 / span 5;}
@@ -519,33 +515,11 @@ letter-spacing: 0.93px;
 
 }
 
-@media (max-width: 350px){
-  .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(25px,1fr));}
-  .twitter_icon {grid-column: 2; grid-row: 8;}
-  .linkedIn_icon {grid-column: 5; grid-row: 8;}
-  .github_icon {grid-column: 8; grid-row: 8;}
-  .border_twitter{grid-column: 2; grid-row: 9; position: relative; left: 30%}
-  .border_linkedIn{grid-column: 5; grid-row: 9; position: relative; left: 30%}
-  .border_github{grid-column: 8; grid-row: 9; position: relative; left: 30%}
-  .social_name{grid-column: 5 / span 3; grid-row: 10; justify-self: center;}
-  .contacts_phone{grid-column: 2; grid-row: 11;}
-  .contacts_phone_number{grid-column: 4 / span 6; grid-row: 11; position: relative; left: 3%}
-  .contacts_email_name{grid-column: 8 / span 3; grid-row: 12;}
-  .contacts_email{grid-column: 2; grid-row: 12;}
-  .main_skills_desc {grid-column: 2/ span 9; font-size: 1rem; justify-self: center;}
-  .work_title {grid-column: 4;}
-  .work_main {grid-column: 3 / span 9;}
-  .work_desc2 {grid-column: 2 / span 10;}
-  .skills2 {grid-column: 1/span 12;}
-  .train_desc {grid-column: 2 / span 11; font-size: 0.9rem; justify-self: center;}
-}
-
-@media (max-width: 295px){
+@media (max-width: 240px){
   .wrapper{justify-items: start; grid-template-columns: repeat(auto-fill, minmax(20px,1fr));}
   header {font-size: 0.7rem;}
   .photo {grid-column: 1 /span 10; max-height: 40%; max-width: 55%;}
-  .header_name {grid-column: 7 / span 2; justify-self: start;}
-  .ux_designer {grid-row: 7; grid-column: 3/ span 10;}
+  .ux_designer, .header_name {grid-column: 7 / span 2; justify-self: start;}
   .twitter_icon {grid-column: 2; grid-row: 8;}
   .linkedIn_icon {grid-column: 5; grid-row: 8;}
   .github_icon {grid-column: 8; grid-row: 8;}
@@ -565,7 +539,6 @@ letter-spacing: 0.93px;
   .work {font-size: 0.7rem;}
   .work_title {font-size: 1.2rem; grid-column: 5;}
   .work_desc {font-size: 1.2rem; grid-column: 4;}
-  .work_desc2 {grid-column: 2 / span 9;}
   .work_main {grid-column: 4/ span 9;}
   .main_skills_title {font-size: 1.2rem;}
   .train_desc {font-size: 0.55rem; grid-column: 3/ span 12; position: relative; right: 5%}
