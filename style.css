@@ -9,7 +9,7 @@ body {
   display: grid;
   row-gap: 20px;
   justify-items: center;
-  width: 99%;
+  max-width: 100%;
   
 }
 
@@ -513,6 +513,9 @@ letter-spacing: 0.93px;
   .work_main_right {grid-column: 3 / span 8;}
   .train_desc {grid-column: 3 / span 9; font-size: 0.9rem;}
 
+}
+
+@media (max-width: 318px){
 }
 
 @media (max-width: 240px){
