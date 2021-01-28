@@ -515,10 +515,10 @@ letter-spacing: 0.93px;
 
 }
 
-@media (max-width: 318px){
+@media (max-width: 350px){
   header {font-size: 1rem;}
-  .photo {grid-column: 1 /span 10; max-height: 50%; max-width: 55%;}
-  .header_name {grid-column: 5 / span 2; justify-self: start;}
+  .photo {grid-column: 1 /span 10; max-height: 50%; max-width: 50%;}
+  .header_name {grid-column: 6 / span 2; justify-self: start;}
    .ux_designer {grid-column: 3 / span 8; grid-row: 8;}
    .twitter_icon {grid-column: 2; grid-row: 9;}
   .linkedIn_icon {grid-column: 4; grid-row: 9;}
